@@ -50,12 +50,21 @@ print("hello world")
 
 
 # 数组
-# a = [2,3,6,45,"老王","老弟","老妹",True,False,2,3,2,2,2,"老王","老王","老弟","老弟"]
-
+a = [2,3,6,45,"老王","老弟","老妹",True,False,2,3,2,2,2,"老王","老王","老弟","老弟"]
+# 剪切
+# print(a)
 # print(len(a))
 # a.pop(6)
 # print(a)
 # print(len(a))
+
+# 删除
+# print(a)
+# print(len(a))
+# a.remove("老王")
+# print(a)
+# print(len(a))
+
 # a.append("apeen")       # 往数组中追加一个
 # print(a.index("老王"))   #查找某个值的下标
 # print(a.count("老弟"))   #统计某个值的数量 
@@ -129,8 +138,8 @@ python的语法
 获取用户输入的个人信息，并且存储到字典中
 个人信息包括：name,age,sex
 """
-a = str(input("请输入您的姓名:"))
-b = int(input("请输入您的年龄:"))
-c = str(input("请输入您的性别:"))
-student = {"name":a,"age":b,"sex":c}
-print(student)
+# a = str(input("请输入您的姓名:"))
+# b = int(input("请输入您的年龄:"))
+# c = str(input("请输入您的性别:"))
+# student = {"name":a,"age":b,"sex":c}
+# print(student)
