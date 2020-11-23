@@ -55,14 +55,9 @@ for i in bili:
             newPass = input("请输入新的密码：")
             i["password"] = newPass
             print("您的新密码是：",i.get("password"))
-            print(bili)
-            break
         else:
             print("账号密码错误，登录失败！")
     else:
-        c = {}
-        c["username"] = u
-        c["password"] = p
-        bili.append(c)
-        print(bili)
+        bili.append({"username":u,"password":p})
         break
+print(bili)

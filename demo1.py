@@ -35,19 +35,22 @@
 #         print("=========")
 
 
-# bili = [
-#     {"username":"王二","password":"555"},
-#     {"username":"麻子","password":"999"}
-#     ]
+bili = [
+    {"username":"王二","password":"555"},
+    {"username":"麻子","password":"999"},
+    {"username":"张三","password":"123456"},
+    {"username":"李四","password":"654321"}
+    ]
 
-# zh = input("请输入账号：")
-# mm = input("请输入密码：")
+zh = input("请输入账号：")
+mm = input("请输入密码：")
 
-# for i in bili:
-#     if zh == i.get("username"):
-#         if mm == i.get("password"):
-#             print("{}登陆成功!".format(zh))
-#         else:
-#             print("密码错误,登录失败!")
-#     else:
-#         continue
+for i in bili:
+    if zh == i.get("username"):
+        print(i)
+        if mm == i.get("password"):
+            print("{}登陆成功!".format(zh))
+        else:
+            print("密码错误,登录失败!")
+    else:
+        continue
