@@ -50,7 +50,7 @@ print("hello world")
 
 
 # 数组
-a = [2,3,6,45,"老王","老弟","老妹",True,False,2,3,2,2,2,"老王","老王","老弟","老弟"]
+# a = [2,3,6,45,"老王","老弟","老妹",True,False,2,3,2,2,2,"老王","老王","老弟","老弟"]
 # 剪切
 # print(a)
 # print(len(a))
@@ -118,7 +118,7 @@ python的语法
 # print(b)
 # print(a)
 
-# a.update(name=1111)
+# a.update(name="萨达撒")
 # print(a)
 
 
