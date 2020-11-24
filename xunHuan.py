@@ -42,22 +42,50 @@
 输入账号和密码，去判断bili中是否存在，如果已经存在，就修该账号的密码，如果不存在，
 就新增一个字典
 """
-bili = [
-    {"username":"laodi","password":"666"},
-]
-u = input("请输入账号：")
-p = input("请输入密码：")
+# bili = [
+#     {"username":"laodi","password":"666"},
+# ]
+# u = input("请输入账号：")
+# p = input("请输入密码：")
 
-for i in bili:
-    if u == i.get("username"):
-        if p == i.get("password"):
-            print("{}登陆成功！".format(u))
-            newPass = input("请输入新的密码：")
-            i["password"] = newPass
-            print("您的新密码是：",i.get("password"))
+# for i in bili:
+#     if u == i.get("username"):
+#         if p == i.get("password"):
+#             print("{}登陆成功！".format(u))
+#             newPass = input("请输入新的密码：")
+#             i["password"] = newPass
+#             print("您的新密码是：",i.get("password"))
+#         else:
+#             print("账号密码错误，登录失败！")
+#     else:
+#         bili.append({"username":u,"password":p})
+#         break
+# print(bili)
+
+
+
+
+
+zfb = [
+    {"username":"王二","password":"555"},
+    {"username":"麻子","password":"999"},
+    {"username":"张三","password":"123456"},
+    {"username":"李四","password":"654321"}
+]
+
+a = 0
+while a < 10:
+    a += 1
+    u = input("请输入账号：")
+    p = input("请输入密码：")
+    for i in zfb:
+        if u == i.get("username"):
+            if p == i.get("password"):
+                print("{}登陆成功".format(u))
+                break
         else:
-            print("账号密码错误，登录失败！")
-    else:
-        bili.append({"username":u,"password":p})
+            continue
+    if a == 5 :
+        print("您的次数已用完")
         break
-print(bili)
+    
