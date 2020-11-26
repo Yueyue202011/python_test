@@ -1,9 +1,6 @@
 import pymysql
 
 # def chaxun(sql):
-#     """
-#         查询 可视化 数据库
-#     """
 #     # pymysql 连接数据库
 #     db = pymysql.connect(host="192.168.1.110",user="root",password="root",db="dsm")
 
@@ -27,12 +24,7 @@ import pymysql
 
 
 
-
-
 def commit(sql):
-    """
-        增加/删除/修改方法：delete update insert：不要传select
-    """
     # pymysql 连接数据库
     db = pymysql.connect(host="192.168.1.110",user="root",password="root",db="dsm")
 
@@ -50,6 +42,7 @@ def commit(sql):
 
     return True
 
-sql = 'INSERT INTO 长安_sheet1_csv (a,b) VALUES (999,"柿子")'
+sql = 'INSERT INTO 长安_sheet1_csv (a,b) VALUES (222,"小年")'
 b = commit(sql)
 print(b)
+
