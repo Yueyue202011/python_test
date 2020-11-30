@@ -61,14 +61,28 @@
 
 
 # 增加
-from pymysql_demo import commit
-zjId = input("请输入增加的ID：")
-zjName = input("请输入名字：")
-zjBj = input("请输入班级：")
-sql ='INSERT INTO teacher (id,teacher,className) VALUES({},"{}","{}")'.format(zjId,zjName,zjBj)
-d = commit(sql)
-print(d)
-if d == True:
-    print("添加成功！")
+# from pymysql_demo import commit
+# zjId = input("请输入增加的ID：")
+# zjName = input("请输入名字：")
+# zjBj = input("请输入班级：")
+# sql ='INSERT INTO teacher (id,teacher,className) VALUES({},"{}","{}")'.format(zjId,zjName,zjBj)
+# d = commit(sql)
+# print(d)
+# if d == True:
+#     print("添加成功！")
+# else:
+#     print("添加失败！")
+
+
+
+from pymysql_demo import chaxun
+
+xm = input("请输入要查询的名字：")
+sql = "select * from student where name = '{}'".format(xm)
+
+s = chaxun(sql)
+print(s)
+if len(s) == 0:
+    print("查询失败！")
 else:
-    print("添加失败！")
+    print("查询成功")

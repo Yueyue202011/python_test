@@ -38,17 +38,17 @@
 
 
 
-class Person1():
+# class Person1():
 
-    xm = "老狗"
-    # 构造方法：__init__，在实例化的时候给新建/初始化成员变量：固定的写法
-    def __init__(self,nl):
-        self.age = nl     # 新建一个成员变量age 
+#     xm = "老狗"
+#     # 构造方法：__init__，在实例化的时候给新建/初始化成员变量：固定的写法
+#     def __init__(self,nl):
+#         self.age = nl     # 新建一个成员变量age 
 
-# self：如果成员变量没有写，则新建一个成员变量，写了就是赋值
-p = Person1(18)
-print(p.xm)
-print(p.age)
+# # self：如果成员变量没有写，则新建一个成员变量，写了就是赋值
+# p = Person1(18)
+# print(p.xm)
+# print(p.age)
 
 
 
@@ -79,3 +79,33 @@ print(p.age)
 # a = j.sz("傻子")
 # print(a)
 # j.nn()
+
+
+
+
+
+# class wz():
+#     yx = "蒙恬"
+#     jn = "蒙家军"
+#     dz = "秦国"
+
+#     def mm(self,xm):
+#         print("{}的妹妹是{}".format(self.yx,xm))
+#         return "登高"
+
+# m = wz()
+# e = m.mm("蒙娇娇")
+# print(e)
+
+
+
+class whh():
+    q = "致盲"
+    w = "移动加速"
+    e = "被动技能"
+    r = "蘑菇"
+    def mw(self):
+        print("{}攻击无效".format(self.q))
+
+kll = whh()
+kll.mw()
